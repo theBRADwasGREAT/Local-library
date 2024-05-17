@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# local-library
-=======
 # Local Library
 
 Welcome to the Local Library Website! This website is designed to manage the books, accounts, and various functionalities of a local library.
@@ -38,4 +35,3 @@ This repository contains the code for a local library website divided into three
 - **Find Book by ID**: Look up a book by its unique identifier.
 - **Partition Books by Borrowed Status**: Separate books based on their current borrowing status (borrowed or available).
 - **Get Borrowers for Book**: Retrieve a list of users who have borrowed a specific book.
->>>>>>> e3af406 (Update README.md)
