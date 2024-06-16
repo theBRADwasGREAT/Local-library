@@ -14,6 +14,7 @@ function getBooksBorrowedCount(books) {
   // If you get stuck, feel free to take a look at this repl.it: https://replit.com/@thinkful/getBooksBorrowedCount#index.js
 // filters through books that are currently being borrowed
 const borrowedBooks = books.filter(book => !book.borrows[0].returned);
+return borrowedBooks.length;
   
 // returns amount of books borrowed
 return borrowedBooks.length;
@@ -57,7 +58,7 @@ function getMostPopularBooks(books) {
 
   const sorted = _sortObjectByValues(groupById);
   return sorted
-    .map((id) => {
+    .map(id => {
       const { title: name } = books.find(({ id: bookId }) => bookId === id);
       return { name, count: groupById[id] };
     })
@@ -82,7 +83,7 @@ function getMostPopularAuthors(books, authors) {
 
   const sorted = _sortObjectByValues(count);
   return sorted
-    .map((authorId) => {
+    .map(authorId => {
       const {
         name: { first, last },
       } = authors.find(({ id }) => id === Number(authorId));
